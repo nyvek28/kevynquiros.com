@@ -6,6 +6,29 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --section-min-padding: 12px;
+  --section-max-width: 1024px;
+  --section-gap: 16px;
+  --section-x-padding: max(
+    var(--section-min-padding),
+    calc((100vw - var(--section-max-width)) / 2)
+  );
+
+  --red: #fe5252;
+  --skin: #f3e8e2;
+  --light-blue: #98eafc;
+  --black: #1e1e1e;
+  --white: #fff;
+
+  --bg-primary: var(--skin);
+  --bg-secondary: var(--red);
+  --bg-tertiary: var(--light-blue);
+
+  --text-primary: var(--black);
+  --text-secondary: var(--white);
+
+  --primary-font: "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +40,8 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--primary-font);
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
 }
