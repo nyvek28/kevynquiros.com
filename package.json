@@ -10,11 +10,14 @@
     "reset": "rm -rf node_modules && rm -rf package-lock.json && rm -rf .next"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.53.0"
+    "react-hook-form": "^7.53.0",
+    "tw-merge": "^0.0.1-alpha.3"
   },
   "devDependencies": {
     "@types/node": "^20",

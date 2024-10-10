@@ -16,6 +16,8 @@ const config: Config = {
       "secondary-text": "var(--text-secondary)",
     },
     fontSize: {
+      xxs: ["12px", "normal"],
+      xs: ["14px", "normal"],
       sm: ["16px", "normal"],
       md: ["20px", "normal"],
       lg: ["24px", "normal"],
