@@ -38,13 +38,13 @@ export default function NavigationDropdown({ className, id, items }: NavigationD
       </div>
       <div className={clsx("block overflow-hidden transition-all duration-75 ease-in-out", {
         "max-h-0": !isOpen,
-        "max-h-[120px] delay-75": isOpen,
+        "max-h-[130px] delay-75": isOpen,
       })}>
         {items.map((item, index) => (
           <Link
             key={index}
             href={item.href}
-            className="block uppercase text-sm mb-5 text-right"
+            className="block uppercase text-lg mb-5 text-right"
             onClick={() => setIsOpen(false)}
           >
             {item.label}
