@@ -5,10 +5,6 @@ const useSticky = (ref: RefObject<HTMLElement>) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("scrolling");
-      console.log(ref.current);
-      
-      
       if (ref.current) {
         const rect = ref.current.getBoundingClientRect();
         setIsSticky(rect.top === 0);

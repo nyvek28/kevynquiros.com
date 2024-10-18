@@ -14,6 +14,7 @@ const config: Config = {
       "tertiary-bg": "var(--bg-tertiary)",
       "primary-text": "var(--text-primary)",
       "secondary-text": "var(--text-secondary)",
+      "error-text": "var(--text-error)",
     },
     fontSize: {
       xxs: ["12px", "normal"],

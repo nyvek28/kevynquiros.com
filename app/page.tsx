@@ -1,10 +1,15 @@
 import { Heading } from "@/components/Heading";
 import { Text } from "@/components/Text";
-import { Input } from "@/components/Input";
 import { Section } from "@/components/Section";
 import { NavigationDropdown } from "@/components/NavigationDropdown";
+import { ContactForm } from "@/components/ContactForm";
 import Link from "next/link";
 import React from "react";
+
+export const metadata = {
+  title: "Kevyn Quiros | Senior Front End Engineer",
+  description: "Senior Front End Engineer creating intuitive and user friendly experiences for the world wide web.",
+}
 
 const EXPERIENCES = [
   {
@@ -160,15 +165,7 @@ export default function Home() {
 
       </Section>
 
-      <Section id="contact" className="col-span-full md:col-span-6 md:col-start-6 mb-10">
-        <h2 className="mb-7">Let's Talk</h2>
-        <form className="flex flex-col">
-          <Input label="Name" className="mb-5" />
-          <Input label="Email" className="mb-5" />
-          <Input label="Message" type="textarea" className="mb-4" />
-          <button className="bg-primary-text text-[white] uppercase p-3 rounded-md max-w-32 tracking-wide" type="submit">Submit</button>
-        </form>
-      </Section>
+      <ContactForm />
 
     </main>
   );
